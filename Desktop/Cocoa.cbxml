@@ -5,7 +5,7 @@
     <databaseInfo>
         <version>134481920</version>
         <UUID>DBB94BD6-9849-497F-82DF-ADF082FD6D80</UUID>
-        <nextObjectID>108</nextObjectID>
+        <nextObjectID>114</nextObjectID>
         <metadata>
             <plist version="1.0">
                 <dict>
@@ -91,5 +91,30 @@ ZU5leHRSdW5Mb29wOih2b2lkICheKSh2b2lkKSlibG9jazsKCkBlbmQK
         <attribute name="sort" type="int32">2</attribute>
         <attribute name="path" type="string">asset.m</attribute>
         <relationship name="snippet" type="1/1" destination="SNIPPET"></relationship>
+    </object>
+    <object type="TAG" id="z111">
+        <attribute name="name" type="string">AppKit</attribute>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z113"></relationship>
+    </object>
+    <object type="ASSET" id="z112">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">wrap.m</attribute>
+        <attribute name="notes" type="string">The order of methods is very important.</attribute>
+        <attribute name="content" type="binary">LSAodm9pZCl3cmFwTGluZXM6KEJPT0wpd3JhcCBpblRleHRWaWV3OihOU1RleHRWaWV3ICopdGV4
+dFZpZXcKewogICAgLy8gUmV0cmlldmUgc2Nyb2xsIHZpZXcgYW5kIHRleHQgY29udGFpbmVyCiAgICBOU1Njcm9sbFZpZXcgKnNjcm9sbFZpZXcgPSBbdGV4dFZpZXcgZW5jbG9zaW5nU2Nyb2xsVmlld107CiAgICBOU1RleHRDb250YWluZXIgKnRleHRDb250YWluZXIgPSBbdGV4dFZpZXcgdGV4dENvbnRhaW5lcl07CiAgICAKICAgIC8vIERpc2FibGUgaG9yaXpvbnRhbCBzY3JvbGxlciBpZiB3cmFwIGlzIG9uCiAgICBbc2Nyb2xsVmlldyBzZXRIYXNIb3Jpem9udGFsU2Nyb2xsZXI6d3JhcCA/IE5PIDogWUVTXTsKICAgIAogICAgLy8gU2V0dXAgY29udGFpbmVyIHNpemUgZm9yIHVubGltaXRlZCB3aWR0aCBpZiB3cmFwIGlzIG9mZgogICAgTlNTaXplIGNvbnRhaW5lclNpemUgPSAod3JhcAogICAgICAgICAgICAgICAgICAgICAgICAgICAgPyBOU01ha2VTaXplKFtzY3JvbGxWaWV3IGNvbnRlbnRTaXplXS53aWR0aCwgRkxUX01BWCkKICAgICAgICAgICAgICAgICAgICAgICAgICAgIDogTlNNYWtlU2l6ZShGTFRfTUFYLCBGTFRfTUFYKSk7CiAgICBbdGV4dENvbnRhaW5lciBzZXRDb250YWluZXJTaXplOmNvbnRhaW5lclNpemVdOwoKICAgIC8vIE1ha2UgY29udGFpbmVyIHRvIGZvbGxvdyB3aWR0aCBvZiB0aGUgdGV4dCB2aWV3IGF1dG9tYXRpY2FsbHkKICAgIFt0ZXh0Q29udGFpbmVyIHNldFdpZHRoVHJhY2tzVGV4dFZpZXc6d3JhcCA/IFlFUyA6IE5PXTsKICAgIAogICAgLy8gU2V0dXAgbWF4aW11bSBzaXplIG9mIHRleHQgdmlldyBlcXVhbCB0byB0aGUgdGV4dCBjb250YWluZXIgc2l6ZQogICAgW3RleHRWaWV3IHNldE1heFNpemU6W3RleHRDb250YWluZXIgY29udGFpbmVyU2l6ZV1dOwogICAgCiAgICAvLyBEaXNhYmxlIGhvcml6b250YWwgYXV0by1yZXNpemluZyBpZiB3cmFwIGlzIG9uCiAgICBbdGV4dFZpZXcgc2V0SG9yaXpvbnRhbGx5UmVzaXphYmxlOndyYXAgPyBOTyA6IFlFU107CiAgICAKICAgIC8vIFJlc2V0IHNjcm9sbCB2aWV3IGNvbnRlbnRzIGFmdGVyIHRleHQgY29udGFpbmVyIHNpemUgaXMgY2hhbmdlZAogICAgW3RleHRWaWV3IHNldEZyYW1lOihOU1JlY3Qpe05TWmVyb1BvaW50LCBbc2Nyb2xsVmlldyBjb250ZW50U2l6ZV19XTsKICAgIAogICAgLy8gRGlzYWJsZSB2ZXJ0aWNhbCB0ZXh0IHZpZXcgYXV0b3Jlc2l6aW5nIGlmIHdyYXAgaXMgb24KICAgIE5TVUludGVnZXIgYXV0b3Jlc2l6aW5nTWFzayA9ICh3cmFwCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPyBOU1ZpZXdXaWR0aFNpemFibGUKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA6IE5TVmlld1dpZHRoU2l6YWJsZXxOU1ZpZXdIZWlnaHRTaXphYmxlKTsKICAgIFt0ZXh0VmlldyBzZXRBdXRvcmVzaXppbmdNYXNrOmF1dG9yZXNpemluZ01hc2tdOwogICAgCiAgICAvLyBUaGlzIGlzIHRoZSBvbmx5IHdheSBJIGZvdW5kIHRvIHJlZHJhdyBzY3JvbGxlcnMKICAgIFtzY3JvbGxWaWV3IHNldEF1dG9oaWRlc1Njcm9sbGVyczpOT107CiAgICBbc2Nyb2xsVmlldyBzZXRBdXRvaGlkZXNTY3JvbGxlcnM6WUVTXTsKfQo=
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z113"></relationship>
+    </object>
+    <object type="SNIPPET" id="z113">
+        <attribute name="name" type="string">Wrap lines in text view</attribute>
+        <attribute name="modified" type="date">322351437.28628402948379516602</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z112"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z111 z114"></relationship>
+    </object>
+    <object type="TAG" id="z114">
+        <attribute name="name" type="string">Cocoa</attribute>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z113"></relationship>
     </object>
 </database>

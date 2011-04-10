@@ -5,7 +5,7 @@
     <databaseInfo>
         <version>134481920</version>
         <UUID>DBB94BD6-9849-497F-82DF-ADF082FD6D80</UUID>
-        <nextObjectID>114</nextObjectID>
+        <nextObjectID>120</nextObjectID>
         <metadata>
             <plist version="1.0">
                 <dict>
@@ -94,7 +94,7 @@ ZU5leHRSdW5Mb29wOih2b2lkICheKSh2b2lkKSlibG9jazsKCkBlbmQK
     </object>
     <object type="TAG" id="z111">
         <attribute name="name" type="string">AppKit</attribute>
-        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z113"></relationship>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z113 z115"></relationship>
     </object>
     <object type="ASSET" id="z112">
         <attribute name="sort" type="int32">-1</attribute>
@@ -115,6 +115,49 @@ dFZpZXcKewogICAgLy8gUmV0cmlldmUgc2Nyb2xsIHZpZXcgYW5kIHRleHQgY29udGFpbmVyCiAgICBO
     </object>
     <object type="TAG" id="z114">
         <attribute name="name" type="string">Cocoa</attribute>
-        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z113"></relationship>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z113 z115"></relationship>
+    </object>
+    <object type="SNIPPET" id="z115">
+        <attribute name="name" type="string">Get an average color from Desktop image</attribute>
+        <attribute name="modified" type="date">324135275.96068501472473144531</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z118 z116 z117"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z111 z114 z119 z120"></relationship>
+    </object>
+    <object type="ASSET" id="z116">
+        <attribute name="notes" type="string">I think NSImage category will work the best for this type of task</attribute>
+        <attribute name="sort" type="int32">0</attribute>
+        <attribute name="path" type="string">NSImage+Additions.h</attribute>
+        <attribute name="content" type="binary">QGludGVyZmFjZSBOU0ltYWdlIChBZGRpdGlvbnMpCgotIChOU0NvbG9yICopYXZlcmFnZUNvbG9y
+OworIChOU0ltYWdlICopZGVza3RvcEJhY2tncm91bmRJbWFnZTsKKyAoTlNDb2xvciAqKWF2ZXJhZ2VDb2xvck9mRGVza3RvcEJhY2tncm91bmRJbWFnZTsKCkBlbmQK
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z115"></relationship>
+    </object>
+    <object type="ASSET" id="z117">
+        <attribute name="notes" type="string">A background image is defined in Desktop preferences. Then we get RGB from its 1x1 px interpolated copy.</attribute>
+        <attribute name="sort" type="int32">1</attribute>
+        <attribute name="path" type="string">NSImage+Additions.m</attribute>
+        <attribute name="content" type="binary">I2ltcG9ydCAiTlNJbWFnZStBZGRpdGlvbnMuaCIKCkBpbXBsZW1lbnRhdGlvbiBOU0ltYWdlIChB
+ZGRpdGlvbnMpCgotIChOU0NvbG9yICopYXZlcmFnZUNvbG9yCnsKICAgIC8vIEludGVycG9sYXRlIGF0IDF4MSBweCBpbWFnZQogICAgTlNJbWFnZSAqY29sb3JJbWFnZSA9IFtbTlNJbWFnZSBhbGxvY10gaW5pdFdpdGhTaXplOk5TTWFrZVNpemUoMSwgMSldOwogICAgW2NvbG9ySW1hZ2UgbG9ja0ZvY3VzXTsKICAgIAogICAgW3NlbGYgZHJhd0luUmVjdDooTlNSZWN0KXsgTlNaZXJvUG9pbnQsIFtjb2xvckltYWdlIHNpemVdIH0KICAgICAgICAgICAgZnJvbVJlY3Q6KE5TUmVjdCl7IE5TWmVyb1BvaW50LCBbc2VsZiBzaXplXSB9CiAgICAgICAgICAgb3BlcmF0aW9uOk5TQ29tcG9zaXRlQ29weSBmcmFjdGlvbjoxXTsKICAgIAogICAgLy8gUmV0cmlldmUgdGhlIGNvbG9yIHZhbHVlIGZyb20gaW50ZXJwb2xhdGVkIGltYWdlCiAgICBOU0NvbG9yICphdmVyYWdlQ29sb3IgPSBOU1JlYWRQaXhlbChOU01ha2VQb2ludCgwLCAwKSk7CiAgICAKICAgIFtjb2xvckltYWdlIHVubG9ja0ZvY3VzXTsKICAgIFtjb2xvckltYWdlIHJlbGVhc2VdOwogICAgCiAgICByZXR1cm4gYXZlcmFnZUNvbG9yOwp9CgorIChOU0ltYWdlICopZGVza3RvcEJhY2tncm91bmRJbWFnZQp7CiAgICBOU0ltYWdlICpiYWNrZ3JvdW5kSW1hZ2UgPSBuaWw7CiAgICAKICAgIC8vIFVSTCBpcyBzYXZlZCBpbiBEZXNrdG9wIHByZWZlcmVuY2VzCiAgICBOU1VzZXJEZWZhdWx0cyAqZGVmYXVsdHMgPSBbTlNVc2VyRGVmYXVsdHMgc3RhbmRhcmRVc2VyRGVmYXVsdHNdOwogICAgW2RlZmF1bHRzIGFkZFN1aXRlTmFtZWQ6QCJjb20uYXBwbGUuZGVza3RvcCJdOwogICAgTlNTdHJpbmcgKmJhY2tncm91bmRGaWxlUGF0aCA9IFtkZWZhdWx0cyB2YWx1ZUZvcktleVBhdGg6QCJCYWNrZ3JvdW5kLmRlZmF1bHQuSW1hZ2VGaWxlUGF0aCJdOwogICAgW2RlZmF1bHRzIHJlbW92ZVN1aXRlTmFtZWQ6QCJjb20uYXBwbGUuZGVza3RvcCJdOwogICAgCiAgICAvLyBDcmVhdGUgYmFja2dyb3VuZCBpbWFnZQogICAgaWYgKFtiYWNrZ3JvdW5kRmlsZVBhdGggbGVuZ3RoXSA+IDApCiAgICB7CiAgICAgICAgTlNVUkwgKmJhY2tncm91bmRGaWxlVVJMID0gW05TVVJMIGZpbGVVUkxXaXRoUGF0aDpiYWNrZ3JvdW5kRmlsZVBhdGhdOwogICAgICAgIGlmIChiYWNrZ3JvdW5kRmlsZVVSTCkKICAgICAgICAgICAgYmFja2dyb3VuZEltYWdlID0gW1tbTlNJbWFnZSBhbGxvY10gaW5pdFdpdGhDb250ZW50c09mVVJMOmJhY2tncm91bmRGaWxlVVJMXSBhdXRvcmVsZWFzZV07CiAgICB9CiAgICAKICAgIHJldHVybiBiYWNrZ3JvdW5kSW1hZ2U7Cn0KCisgKE5TQ29sb3IgKilhdmVyYWdlQ29sb3JPZkRlc2t0b3BCYWNrZ3JvdW5kSW1hZ2UKewogICAgTlNJbWFnZSAqaW1hZ2UgPSBbc2VsZiBkZXNrdG9wQmFja2dyb3VuZEltYWdlXTsKICAgIE5TQ29sb3IgKmNvbG9yID0gW2ltYWdlIGF2ZXJhZ2VDb2xvcl07CiAgICByZXR1cm4gY29sb3I7Cn0KCkBlbmQK
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z115"></relationship>
+    </object>
+    <object type="ASSET" id="z118">
+        <attribute name="notes" type="string">This will add a tricky background to the window</attribute>
+        <attribute name="sort" type="int32">2</attribute>
+        <attribute name="path" type="string">Usage.m</attribute>
+        <attribute name="content" type="binary">TlNDb2xvciAqYXZlcmFnZUNvbG9yID0gW05TSW1hZ2UgYXZlcmFnZUNvbG9yT2ZEZXNrdG9wQmFj
+a2dyb3VuZEltYWdlXTsKaWYgKGF2ZXJhZ2VDb2xvcikKewogICAgW3dpbmRvdyBzZXRPcGFxdWU6Tk9dOwogICAgW3dpbmRvdyBzZXRTdHlsZU1hc2s6W3NlbGYud2luZG93IHN0eWxlTWFza10gKyBOU1RleHR1cmVkQmFja2dyb3VuZFdpbmRvd01hc2tdOwogICAgYXZlcmFnZUNvbG9yID0gW2F2ZXJhZ2VDb2xvciBjb2xvcldpdGhBbHBoYUNvbXBvbmVudDouNzVdOwogICAgW3dpbmRvdyBzZXRCYWNrZ3JvdW5kQ29sb3I6YXZlcmFnZUNvbG9yXTsKfQo=
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z115"></relationship>
+    </object>
+    <object type="TAG" id="z119">
+        <attribute name="name" type="string">Desktop</attribute>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z115"></relationship>
+    </object>
+    <object type="TAG" id="z120">
+        <attribute name="name" type="string">NSImage</attribute>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z115"></relationship>
     </object>
 </database>

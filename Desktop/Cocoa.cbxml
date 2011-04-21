@@ -5,7 +5,7 @@
     <databaseInfo>
         <version>134481920</version>
         <UUID>DBB94BD6-9849-497F-82DF-ADF082FD6D80</UUID>
-        <nextObjectID>120</nextObjectID>
+        <nextObjectID>124</nextObjectID>
         <metadata>
             <plist version="1.0">
                 <dict>
@@ -115,7 +115,7 @@ dFZpZXcKewogICAgLy8gUmV0cmlldmUgc2Nyb2xsIHZpZXcgYW5kIHRleHQgY29udGFpbmVyCiAgICBO
     </object>
     <object type="TAG" id="z114">
         <attribute name="name" type="string">Cocoa</attribute>
-        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z113 z115"></relationship>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z113 z115 z123"></relationship>
     </object>
     <object type="SNIPPET" id="z115">
         <attribute name="name" type="string">Get an average color from Desktop image</attribute>
@@ -154,10 +154,35 @@ a2dyb3VuZEltYWdlXTsKaWYgKGF2ZXJhZ2VDb2xvcikKewogICAgW3dpbmRvdyBzZXRPcGFxdWU6Tk9d
     </object>
     <object type="TAG" id="z119">
         <attribute name="name" type="string">Desktop</attribute>
-        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z115"></relationship>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z115 z123"></relationship>
     </object>
     <object type="TAG" id="z120">
         <attribute name="name" type="string">NSImage</attribute>
         <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z115"></relationship>
+    </object>
+    <object type="TAG" id="z121">
+        <attribute name="name" type="string">Feedback</attribute>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z123"></relationship>
+    </object>
+    <object type="TAG" id="z122">
+        <attribute name="name" type="string">Email</attribute>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z123"></relationship>
+    </object>
+    <object type="SNIPPET" id="z123">
+        <attribute name="name" type="string">How to implement Provide Feedback in Help menu</attribute>
+        <attribute name="modified" type="date">325097956.32225698232650756836</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z124"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z121 z122 z114 z119"></relationship>
+    </object>
+    <object type="ASSET" id="z124">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">asset.m</attribute>
+        <attribute name="notes" type="string">I use this code in CodeBox app</attribute>
+        <attribute name="content" type="binary">LSAoSUJBY3Rpb24pcHJvdmlkZUZlZWRiYWNrOihpZClzZW5kZXIKewogICAgTlNTdHJpbmcgKnNo
+b3J0VmVyc2lvbiA9IFtbTlNCdW5kbGUgbWFpbkJ1bmRsZV0gb2JqZWN0Rm9ySW5mb0RpY3Rpb25hcnlLZXk6QCJDRkJ1bmRsZVNob3J0VmVyc2lvblN0cmluZyJdOwogICAgTlNTdHJpbmcgKlVSTFN0cmluZyA9IFtOU1N0cmluZyBzdHJpbmdXaXRoRm9ybWF0OkAibWFpbHRvOmNvZGVib3hhcHBAZ21haWwuY29tP3N1YmplY3Q9Q29kZUJveCUlMjAlQCUlMjBGZWVkYmFjayIsIHNob3J0VmVyc2lvbl07CiAgICBbW05TV29ya3NwYWNlIHNoYXJlZFdvcmtzcGFjZV0gb3BlblVSTDpbTlNVUkwgVVJMV2l0aFN0cmluZzpVUkxTdHJpbmddXTsKfQo=
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z123"></relationship>
     </object>
 </database>

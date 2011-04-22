@@ -5,7 +5,7 @@
     <databaseInfo>
         <version>134481920</version>
         <UUID>DBB94BD6-9849-497F-82DF-ADF082FD6D80</UUID>
-        <nextObjectID>124</nextObjectID>
+        <nextObjectID>128</nextObjectID>
         <metadata>
             <plist version="1.0">
                 <dict>
@@ -184,5 +184,30 @@ a2dyb3VuZEltYWdlXTsKaWYgKGF2ZXJhZ2VDb2xvcikKewogICAgW3dpbmRvdyBzZXRPcGFxdWU6Tk9d
 b3J0VmVyc2lvbiA9IFtbTlNCdW5kbGUgbWFpbkJ1bmRsZV0gb2JqZWN0Rm9ySW5mb0RpY3Rpb25hcnlLZXk6QCJDRkJ1bmRsZVNob3J0VmVyc2lvblN0cmluZyJdOwogICAgTlNTdHJpbmcgKlVSTFN0cmluZyA9IFtOU1N0cmluZyBzdHJpbmdXaXRoRm9ybWF0OkAibWFpbHRvOmNvZGVib3hhcHBAZ21haWwuY29tP3N1YmplY3Q9Q29kZUJveCUlMjAlQCUlMjBGZWVkYmFjayIsIHNob3J0VmVyc2lvbl07CiAgICBbW05TV29ya3NwYWNlIHNoYXJlZFdvcmtzcGFjZV0gb3BlblVSTDpbTlNVUkwgVVJMV2l0aFN0cmluZzpVUkxTdHJpbmddXTsKfQo=
 </attribute>
         <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z123"></relationship>
+    </object>
+    <object type="TAG" id="z125">
+        <attribute name="name" type="string">Xcode</attribute>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z126"></relationship>
+    </object>
+    <object type="SNIPPET" id="z126">
+        <attribute name="name" type="string">.gitignore for Xcode 4 projects</attribute>
+        <attribute name="modified" type="date">325179359.33002299070358276367</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z128"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z125 z127"></relationship>
+    </object>
+    <object type="TAG" id="z127">
+        <attribute name="name" type="string">Git</attribute>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z126"></relationship>
+    </object>
+    <object type="ASSET" id="z128">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">asset.txt</attribute>
+        <attribute name="notes" type="string">How to use: $ mate .gitignore, then paste all this text</attribute>
+        <attribute name="content" type="binary">IyBYY29kZQpidWlsZC8qCioucGJ4dXNlcgohZGVmYXVsdC5wYnh1c2VyCioubW9kZTF2MwohZGVm
+YXVsdC5tb2RlMXYzCioubW9kZTJ2MwohZGVmYXVsdC5tb2RlMnYzCioucGVyc3BlY3RpdmV2MwohZGVmYXVsdC5wZXJzcGVjdGl2ZXYzCioueGN3b3Jrc3BhY2UKIWRlZmF1bHQueGN3b3Jrc3BhY2UKeGN1c2VyZGF0YQpwcm9maWxlCioubW92ZWQtYXNpZGUKIyBGaW5kZXIKLkRTX1N0b3Jl
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z126"></relationship>
     </object>
 </database>

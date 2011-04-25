@@ -1,0 +1,1 @@
+Feel free to share your own repositories as read-only submodules. Do not hesitate to create your own forks ignoring this repository. If you use Github then people will be able to find your CBXML goodies too. Enjoy CodeBox!

@@ -5,7 +5,7 @@
     <databaseInfo>
         <version>134481920</version>
         <UUID>DBB94BD6-9849-497F-82DF-ADF082FD6D80</UUID>
-        <nextObjectID>128</nextObjectID>
+        <nextObjectID>130</nextObjectID>
         <metadata>
             <plist version="1.0">
                 <dict>
@@ -115,7 +115,7 @@ dFZpZXcKewogICAgLy8gUmV0cmlldmUgc2Nyb2xsIHZpZXcgYW5kIHRleHQgY29udGFpbmVyCiAgICBO
     </object>
     <object type="TAG" id="z114">
         <attribute name="name" type="string">Cocoa</attribute>
-        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z113 z115 z123"></relationship>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z123 z129 z113 z115"></relationship>
     </object>
     <object type="SNIPPET" id="z115">
         <attribute name="name" type="string">Get an average color from Desktop image</attribute>
@@ -158,7 +158,7 @@ a2dyb3VuZEltYWdlXTsKaWYgKGF2ZXJhZ2VDb2xvcikKewogICAgW3dpbmRvdyBzZXRPcGFxdWU6Tk9d
     </object>
     <object type="TAG" id="z120">
         <attribute name="name" type="string">NSImage</attribute>
-        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z115"></relationship>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z129 z115"></relationship>
     </object>
     <object type="TAG" id="z121">
         <attribute name="name" type="string">Feedback</attribute>
@@ -209,5 +209,22 @@ b3J0VmVyc2lvbiA9IFtbTlNCdW5kbGUgbWFpbkJ1bmRsZV0gb2JqZWN0Rm9ySW5mb0RpY3Rpb25hcnlL
 YXVsdC5tb2RlMXYzCioubW9kZTJ2MwohZGVmYXVsdC5tb2RlMnYzCioucGVyc3BlY3RpdmV2MwohZGVmYXVsdC5wZXJzcGVjdGl2ZXYzCioueGN3b3Jrc3BhY2UKIWRlZmF1bHQueGN3b3Jrc3BhY2UKeGN1c2VyZGF0YQpwcm9maWxlCioubW92ZWQtYXNpZGUKIyBGaW5kZXIKLkRTX1N0b3Jl
 </attribute>
         <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z126"></relationship>
+    </object>
+    <object type="SNIPPET" id="z129">
+        <attribute name="name" type="string">Proportional Scaling with NSImage</attribute>
+        <attribute name="modified" type="date">325434085.57764399051666259766</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z130"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z120 z114"></relationship>
+    </object>
+    <object type="ASSET" id="z130">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">NSImage+Additions.m</attribute>
+        <attribute name="notes" type="string">http://theocacao.com/document.page/498</attribute>
+        <attribute name="content" type="binary">QGltcGxlbWVudGF0aW9uIE5TSW1hZ2UgKEFkZGl0aW9ucykKCi0gKE5TSW1hZ2UgKilpbWFnZUJ5
+U2NhbGluZ1Byb3BvcnRpb25hbGx5VG9TaXplOihOU1NpemUpdGFyZ2V0U2l6ZQp7CiAgICBOU0ltYWdlICpzb3VyY2VJbWFnZSA9IHNlbGY7CiAgICBOU0ltYWdlICpuZXdJbWFnZSA9IG5pbDsKICAgIAogICAgaWYgKFtzb3VyY2VJbWFnZSBpc1ZhbGlkXSkKICAgIHsKICAgICAgICBOU1NpemUgaW1hZ2VTaXplID0gW3NvdXJjZUltYWdlIHNpemVdOwogICAgICAgIGZsb2F0IHdpZHRoID0gaW1hZ2VTaXplLndpZHRoOwogICAgICAgIGZsb2F0IGhlaWdodCA9IGltYWdlU2l6ZS5oZWlnaHQ7CiAgICAgICAgCiAgICAgICAgZmxvYXQgdGFyZ2V0V2lkdGggPSB0YXJnZXRTaXplLndpZHRoOwogICAgICAgIGZsb2F0IHRhcmdldEhlaWdodCA9IHRhcmdldFNpemUuaGVpZ2h0OwogICAgICAgIAogICAgICAgIGZsb2F0IHNjYWxlRmFjdG9yID0gMDsKICAgICAgICBmbG9hdCBzY2FsZWRXaWR0aCA9IHRhcmdldFdpZHRoOwogICAgICAgIGZsb2F0IHNjYWxlZEhlaWdodCA9IHRhcmdldEhlaWdodDsKICAgICAgICAKICAgICAgICBOU1BvaW50IHRodW1ibmFpbFBvaW50ID0gTlNaZXJvUG9pbnQ7CiAgICAgICAgCiAgICAgICAgaWYgKE5TRXF1YWxTaXplcyhpbWFnZVNpemUsIHRhcmdldFNpemUpID09IE5PKQogICAgICAgIHsKICAgICAgICAgICAgZmxvYXQgd2lkdGhGYWN0b3IgPSB0YXJnZXRXaWR0aCAvIHdpZHRoOwogICAgICAgICAgICBmbG9hdCBoZWlnaHRGYWN0b3IgPSB0YXJnZXRIZWlnaHQgLyBoZWlnaHQ7CiAgICAgICAgICAgIAogICAgICAgICAgICBpZiAod2lkdGhGYWN0b3IgPCBoZWlnaHRGYWN0b3IpCiAgICAgICAgICAgICAgICBzY2FsZUZhY3RvciA9IHdpZHRoRmFjdG9yOwogICAgICAgICAgICBlbHNlCiAgICAgICAgICAgICAgICBzY2FsZUZhY3RvciA9IGhlaWdodEZhY3RvcjsKICAgICAgICAgICAgCiAgICAgICAgICAgIHNjYWxlZFdpZHRoID0gd2lkdGggICogc2NhbGVGYWN0b3I7CiAgICAgICAgICAgIHNjYWxlZEhlaWdodCA9IGhlaWdodCAqIHNjYWxlRmFjdG9yOwogICAgICAgICAgICAKICAgICAgICAgICAgaWYgKHdpZHRoRmFjdG9yIDwgaGVpZ2h0RmFjdG9yKQogICAgICAgICAgICAgICAgdGh1bWJuYWlsUG9pbnQueSA9ICh0YXJnZXRIZWlnaHQgLSBzY2FsZWRIZWlnaHQpICogMC41OwogICAgICAgICAgICAKICAgICAgICAgICAgZWxzZSBpZiAod2lkdGhGYWN0b3IgPiBoZWlnaHRGYWN0b3IpCiAgICAgICAgICAgICAgICB0aHVtYm5haWxQb2ludC54ID0gKHRhcmdldFdpZHRoIC0gc2NhbGVkV2lkdGgpICogMC41OwogICAgICAgIH0KICAgICAgICAKICAgICAgICBOU1JlY3QgdGh1bWJuYWlsUmVjdCA9IHsgdGh1bWJuYWlsUG9pbnQsIE5TTWFrZVNpemUoc2NhbGVkV2lkdGgsIHNjYWxlZEhlaWdodCkgfTsKICAgICAgICAKICAgICAgICBuZXdJbWFnZSA9IFtbTlNJbWFnZSBhbGxvY10gaW5pdFdpdGhTaXplOnRhcmdldFNpemVdOwogICAgICAgIFtuZXdJbWFnZSBsb2NrRm9jdXNdOwogICAgICAgIFtzb3VyY2VJbWFnZSBkcmF3SW5SZWN0OnRodW1ibmFpbFJlY3QgZnJvbVJlY3Q6TlNaZXJvUmVjdCBvcGVyYXRpb246TlNDb21wb3NpdGVTb3VyY2VPdmVyIGZyYWN0aW9uOjFdOwogICAgICAgIAogICAgICAgIFtuZXdJbWFnZSB1bmxvY2tGb2N1c107CiAgICB9CiAgICAKICAgIHJldHVybiBbbmV3SW1hZ2UgYXV0b3JlbGVhc2VdOwp9CgpAZW5kCg==
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z129"></relationship>
     </object>
 </database>

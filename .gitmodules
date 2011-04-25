@@ -1,3 +1,6 @@
 [submodule "lukabernardi"]
 	path = lukabernardi
 	url = git://github.com/lukabernardi/CodeBox-Library.git
+[submodule "shpakovski"]
+	path = shpakovski
+	url = git://github.com/shpakovski/codebox_library.git

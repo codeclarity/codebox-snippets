@@ -4,9 +4,6 @@
 [submodule "shpakovski"]
 	path = shpakovski
 	url = git://github.com/shpakovski/codebox_library.git
-[submodule "dehlen"]
-	path = dehlen
-	url = git://github.com/dehlen/CBXML-Library.git
 [submodule "ablfx"]
 	path = ablfx
 	url = git://github.com/ablfx/Ablfx-CodeBox.git
